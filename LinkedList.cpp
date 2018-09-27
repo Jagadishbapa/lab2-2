@@ -77,13 +77,14 @@ void List::insertAsFirst(double x)
 
 void List::insertAsLast(double x) {
 	if (!empty()) {
-		Node * ptr = first_->next_;
+		int size = this->size();
+		Node * ptr = first_;
 		cout << "ptr point to address: " << ptr << endl;
-		while(ptr != NULL) {
+		for (int i = 0; i < (size - 1); i++) {
 			cout << "ptr point to address: " << ptr << endl;
 			ptr = ptr->next_;
 		}
-		ptr = new Node(x);
+		ptr->next_ = new Node(x);
 		cout << endl << "new Node is " << ptr << endl;
 		cout << "the first node next_ is at " << first_->next_ << endl;
 	}
