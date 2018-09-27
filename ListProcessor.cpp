@@ -88,7 +88,13 @@ int main()
 	cout << "inserted at last position: 1.31" << endl;
 	last.insertAsLast(1.31);
 	cout << "last: " << last << endl;
-	cout << "last sum: " << last.sum();
+	cout << "last sum: " << last.sum() << endl;
+	cout << endl;
+	List emptyForInsertAsLast;
+	cout << "emptyForInsertAsLast: " << emptyForInsertAsLast << endl;
+	cout << "inserting into emptyForInsertAsLast at last position: 1.3" << endl;
+	emptyForInsertAsLast.insertAsLast(1.3);
+	cout << "emptyForInsertAsLast: " << emptyForInsertAsLast << endl;
 	cout << endl << "End of code" << endl;
 	int pause;
 	std::cin >> pause;
