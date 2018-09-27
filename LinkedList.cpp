@@ -84,6 +84,9 @@ void List::insertAsLast(double x) {
 		}
 		ptr->next_ = new Node(x);
 	}
+	else {
+		first_ = new Node(x);
+	}
 }
 
 double List::removeFirst()
