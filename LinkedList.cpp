@@ -77,13 +77,11 @@ void List::insertAsFirst(double x)
 
 void List::insertAsLast(double x) {
 	if (!empty()) {
-		int size = this->size();
 		Node * ptr = first_;
-		for (int i = 0; i < size; i++) {
+		while(ptr != NULL) {
 			ptr = ptr->next_;
 		}
-		
-		ptr->next_ = new Node(x, );
+		ptr = new Node(x);
 	}
 	
 }
