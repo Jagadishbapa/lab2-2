@@ -81,6 +81,14 @@ int main()
 	last.insertAsLast(1.2);
 	cout << "inserted in last position: 1.2" << endl;
 	cout << "last : " << last << endl;
+	cout << "inserted at first position: 1.01" << endl;
+	last.insertAsFirst(1.01);
+	cout << "last: " << last << endl;
+	cout << "last sum: " << last.sum();
+	cout << "inserted at last position: 1.31" << endl;
+	last.insertAsLast(1.31);
+	cout << "last: " << last << endl;
+	cout << "last sum: " << last.sum();
 	cout << endl << "End of code" << endl;
 	int pause;
 	std::cin >> pause;
