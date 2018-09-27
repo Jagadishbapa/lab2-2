@@ -77,13 +77,16 @@ void List::insertAsFirst(double x)
 
 void List::insertAsLast(double x) {
 	if (!empty()) {
-		Node * ptr = first_;
+		Node * ptr = first_->next_;
+		cout << "ptr point to address: " << ptr << endl;
 		while(ptr != NULL) {
+			cout << "ptr point to address: " << ptr << endl;
 			ptr = ptr->next_;
 		}
 		ptr = new Node(x);
+		cout << endl << "new Node is " << ptr << endl;
+		cout << "the first node next_ is at " << first_->next_ << endl;
 	}
-	
 }
 
 double List::removeFirst()
@@ -108,6 +111,7 @@ const int List::size() {
 			counter++;
 			ptr = ptr->next_;
 		}
+		
 	}
 	return counter;
 }
