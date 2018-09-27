@@ -1,8 +1,7 @@
 // ListProcessor.cpp
 
-// tom bailey   1540  30 sep 2011
+//  William Cary 2030 24 Sep 2018
 
-// tom bailey   1030  27 jan 2012
 // Exercise the List class with verbose Node constructor
 //   and destructor.
 
