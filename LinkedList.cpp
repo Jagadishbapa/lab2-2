@@ -47,7 +47,7 @@ bool List::operator==(List &rhs){
     if(size() != rhs.size()){return false;}//sizes not the same
 
     Node * lptr = first_->next_;
-    Node * rptr = first_->next_;
+    Node * rptr = rhs.first_->next_;
 	double lEntry = lptr->entry_;
     double rEntry = rptr->entry_;
 	while (lptr != NULL && rptr != NULL){
