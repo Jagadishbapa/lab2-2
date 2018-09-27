@@ -88,6 +88,9 @@ void List::insertAsLast(double x) {
 		/*cout << endl << "new Node is " << ptr << endl;
 		cout << "the first node next_ is at " << first_->next_ << endl;*/
 	}
+	else {
+		first_ = new Node(x);
+	}
 }
 
 double List::removeFirst()
